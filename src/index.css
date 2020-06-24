@@ -24,14 +24,16 @@ body{
 }
 
 .app{
-  background-image: url('./Assets/cold-bg.jpg');
+  /* background-image: url('./Assets/cold-bg.jpg'); */
+  background-image: url('https://raw.githubusercontent.com/TylerPottsDev/weather-react/master/src/assets/cold-bg.jpg');
   background-size: cover;
   background-position: bottom;
   transition: 0.4s ease-out;
 }
 
 .app.warm{
-  background-image: url('./Assets/warm-bg.jpg');
+  /* background-image: url('./Assets/warm-bg.jpg'); */
+  background-image: url('https://raw.githubusercontent.com/TylerPottsDev/weather-react/master/src/assets/warm-bg.jpg');
 }
 
 main{
@@ -53,8 +55,8 @@ main{
   background: none;
   border: none;
   outline: none;
-
-  background-color: rgba(255, 255, 255, 0.5);
+  background: transparent;
+  /* background-color: rgba(255, 255, 255, 0.5); */
   border-radius: 0px 0px 16px 16px;
   margin-top: -25px;
 
