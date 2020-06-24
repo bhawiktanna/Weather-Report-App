@@ -36,7 +36,16 @@ function App() {
     return `${day} ${date} ${month} ${year}`
   
   };
+  const style = {
+    textAlign: "center",
+    color: "purple",
+    backgroundColor: "blue",
+    marginBottom: "1px",
+
+  };
   return (
+    <div>
+      <h1 style={style} >Weather Report App</h1>
     <div className={typeof weather.main != "undefined" ?
       ((weather.main.temp) > 20) ? 'app warm' :
         'app' :
@@ -45,7 +54,7 @@ function App() {
         <div className="search-box">
           <input type="text"
             className="search-bar"
-            placeholder="Search..."
+            placeholder="Search for any City..."
             onChange={e => setQuery(e.target.value)}
             value={query}
             onKeyPress={search}/>
@@ -65,6 +74,7 @@ function App() {
             </div>
           </div>) : ('')}
       </main>
+      </div>
     </div>
   );
 }
